@@ -6,7 +6,9 @@
   font-weight: bold;
   margin-left: 15rpx;
 
+
 }
+
 .circular{
   margin-left: 80rpx;
   margin-top: 35rpx;
@@ -18,3 +20,140 @@
   justify-content: center;
   align-items: center;
 }
+
+.card-swiper {
+	height: 420rpx !important;
+}
+
+.card-swiper swiper-item {
+	width: 610rpx !important;
+	left: 70rpx;
+	box-sizing: border-box;
+	padding: 40rpx 0rpx 70rpx;
+	overflow: initial;
+}
+
+.card-swiper swiper-item .swiper-item {
+	width: 100%;
+	display: block;
+	height: 100%;
+	border-radius: 10rpx;
+	transform: scale(0.9);
+	transition: all 0.2s ease-in 0s;
+	overflow: hidden;
+}
+
+.card-swiper swiper-item.cur .swiper-item {
+	transform: none;
+	transition: all 0.2s ease-in 0s;
+}
+
+.tower-swiper .tower-item {
+  transform: scale(calc(0.5 + var(--index) / 10));
+  margin-left: calc(var(--left) * 100rpx - 150rpx);
+  z-index: var(--index);
+}
+
+
+
+/* 2 */
+.main-core-item{
+  flex-direction: column; 
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 20%;
+  height: 175rpx;
+}
+
+
+.core-item-icon{
+  display: block;
+  width: 85rpx;
+  height: 85rpx;
+  margin: 15rpx auto;
+}
+.core-item-name{
+  display: block;
+  margin: 5rpx;
+}
+
+.main-core{
+  
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  background: #fff;
+  border-bottom: 1rpx solid #e5e5e5;
+  border-top: 1rpx solid #e5e5e5;
+  padding: 15rpx 10rpx 10rpx;
+  margin-bottom: 20rpx;
+  min-height: 175rpx;
+  overflow: hidden;
+}
+
+/* 3 */
+.btn{
+  margin-left: 15rem;
+  border-radius: 30rem;
+  height: 3rem;
+  width: 3rem;
+  background-color: blue;
+  text-align: center;
+}
+.btn-yuan{
+  height: 1rem;
+  width: 2rem;
+  margin-top: 0.8rem;
+  margin-left: -1rem;
+  color: red;
+  position:absolute;
+}
+
+/* 文章 */
+
+.cu-card.article {
+	display: block;
+}
+
+.cu-card.article>.cu-item {
+	padding-bottom: 30rpx;
+}
+
+.cu-card.article>.cu-item .title {
+	font-size: 30rpx;
+	font-weight: 900;
+	color: var(--black);
+	line-height: 100rpx;
+	padding: 0 30rpx;
+}
+
+.cu-card.article>.cu-item .content {
+	display: flex;
+	padding: 0 30rpx;
+}
+
+.cu-card.article>.cu-item .content>image {
+	width: 240rpx;
+	height: 6.4em;
+	margin-right: 20rpx;
+	border-radius: 6rpx;
+}
+
+.cu-card.article>.cu-item .content .desc {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.cu-card.article>.cu-item .content .text-content {
+	font-size: 28rpx;
+	color: #888;
+	height: 4.8em;
+	overflow: hidden;
+}
+
+

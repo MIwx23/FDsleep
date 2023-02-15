@@ -1,16 +1,19 @@
 {
   "pages": [
+    "pages/home/home",
     "pages/mine/mine",
     "pages/commutiy/commutiy",
-    "pages/home/home",
     "pages/index/index",
     "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+
     "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#7acfa6",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#7acfa6", 
+    "enablePullDownRefresh": true
   },
 
   "tabBar": {

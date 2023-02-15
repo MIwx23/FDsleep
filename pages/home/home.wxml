@@ -1,16 +1,47 @@
 <!--pages/home/home.wxml-->
-<view>
-  <text class="home_container">助眠</text>  
-  <view class="circular">
-    <text >12</text> 
-  </view>
-  <view class="circular">
-    <text>12</text> 
-  </view>
+
+<!-- 广告 -->
+<swiper class="card-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+  <swiper-item wx:for="{{swiperList}}" wx:key class="{{cardCur==index?'cur':''}}">
+    <view class="swiper-item">
+      <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+      <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+    </view>
+  </swiper-item>
+</swiper>
+
+<!-- 助眠 -->
+<!-- <text class="home_container">助眠</text> -->
+<view class="main-core" >
+  <navigator wx:for="{{swiperList}}" class="main-core-item" url="/pages/index/index">
+    <image class="core-item-icon" src="/images/logo.png"></image>
+    <text class="core-item-name">index</text>
+  </navigator>
+  <navigator class="btn" url="/pages/index/index">
+    <text class="btn-yuan">音乐</text>
+  </navigator>
 </view>
+
 <view>
-  <text class="home_container">睡眠测试</text>  
+  <text class="home_container">睡眠测试</text>
 </view>
-<view>
-  <text class="home_container">知识科普</text>  
+
+<text class="home_container">知识科普</text>
+
+  <view class="cu-card article">
+  <view class="cu-item shadow">
+    <view class="title">
+      <view class="text-cut">关于中医让你睡的更好的9个小技巧和10种方法11天彻底改善睡眠</view>
+    </view>
+    <view class="content">
+      <image src="/../images/logo.png" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content"> 折磨生出苦难，苦难又会加剧折磨，凡间这无穷的循环，将有我来终结！真正的恩典因不完整而美丽，因情感而真诚，因脆弱而自由！</view>
+        <view>
+          <view class="cu-tag bg-red light sm round">中医</view>
+          <view class="cu-tag bg-green light sm round">睡眠</view>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>
