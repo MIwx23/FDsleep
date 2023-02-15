@@ -1,98 +1,25 @@
-/* pages/mine/mine.wxss */
-.upside {
-  height: 400rpx;
-  background: linear-gradient(#ffb485, #ffc58b, #ffdb94);
-  padding-top: 140rpx;
-  display: flex;
-  position: relative;
+.page {
+  height: 100Vh;
+  width: 100vw;
 }
-.upside .face {
-  margin-left: 40rpx;
-  border-radius: 30rpx;
-  height: 140rpx;
-  width: 140rpx;
+
+.page.show {
+  overflow: hidden;
 }
-.upside .nickname {
-  color: white;
-  margin-top: 25rpx;
-  margin-left: 36rpx;
-  font-size: x-large;
+
+.switch-sex::after {
+  content: "\e716";
 }
-.upside .signature {
-  color: white;
-  font-size: medium;
+
+.switch-sex::before {
+  content: "\e7a9";
 }
-.upside .tool-box {
-  margin-left: 30rpx;
-  border-radius: 40rpx;
-  padding-top: 60rpx;
-  padding-bottom: 30rpx;
-  padding-right: 22rpx;
-  padding-left: 80rpx;
-  background-color: white;
-  position: absolute;
-  margin-top: 160rpx;
-  display: flex;
+
+.switch-music::after {
+  content: "\e66a";
 }
-.upside .tool-box .tool-item {
-  width: 150rpx;
-  color: #3d3d3d;
+
+.switch-music::before {
+  content: "\e6db";
 }
-.upside .tool-box .tool-item image {
-  height: 80rpx;
-  width: 80rpx;
-}
-.upside .tool-box .tool-item .tool-item-title-first {
-  left: 68rpx;
-  position: absolute;
-  width: 150rpx;
-}
-.upside .tool-box .tool-item-title-second {
-  margin-left: 16rpx;
-}
-.mine_publish_box {
-  background-color: white;
-  border-radius: 30rpx;
-  margin-left: 30rpx;
-  margin-top: 130rpx;
-  margin-right: 30rpx;
-  padding-top: 10rpx;
-  padding-bottom: 40rpx;
-}
-.mine_publish_box .mine_publish_item {
-  margin-top: 30rpx;
-  display: flex;
-}
-.mine_publish_box .mine_publish_item .mine_publish_title {
-  margin-left: 40rpx;
-  font-size: large;
-}
-.mine_publish_box .mine_publish_item image {
-  right: 60rpx;
-  position: absolute;
-  height: 50rpx;
-  width: 30rpx;
-}
-.mine_setting_item {
-  background-color: white;
-  margin-left: 30rpx;
-  margin-right: 30rpx;
-  margin-top: 30rpx;
-  height: 100rpx;
-  border-radius: 40rpx;
-  display: flex;
-}
-.mine_setting_item .mine_setting_title {
-  margin-left: 40rpx;
-  padding-top: 27rpx;
-  display: flex;
-  font-size: large;
-}
-.mine_setting_item image {
-  margin-top: 30rpx;
-  margin-bottom: 40rpx;
-  right: 60rpx;
-  position: absolute;
-  height: 50rpx;
-  width: 30rpx;
-}
+
