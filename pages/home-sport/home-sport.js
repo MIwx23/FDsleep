@@ -1,32 +1,11 @@
-// pages/commutiy/commutiy.js
+// pages/home-sport/home-sport.js
 Page({
 
+  /**
+   * 页面的初始数据
+   */
   data: {
-    TabCur: 0,
-    scrollLeft:0,
-    commutiyNavigationList: [{
-      id: 0,
-      type: 'text',
-      text: '广场'
-    },{
-      id: 1,
-      type: 'text',
-      text: '树洞'
-    },{
-      id: 2,
-      type: 'text',
-      text: '达人分享'
-    },{
-      id: 3,
-      type: 'text',
-      text: '更多'
-    },]
-  },
-  tabSelect(e) {
-    this.setData({
-      TabCur: e.currentTarget.dataset.id,
-      scrollLeft: (e.currentTarget.dataset.id-1)*60
-    })
+
   },
 
   /**

@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+ 
+  "usingComponents": {
+    "commutiy_01": "/components/commutiy_plaza/commutiy_plaza"
+  },
+  "navigationBarTitleText": "社区"
 }

@@ -6,10 +6,43 @@ Page({
       type: 'image',
       url: '/../images/BasicsBg.png'
     },{
+      id: 1,
+      type: 'image',
+      url: '/../images/componentBg.png'
+    },{
       id: 2,
+      type: 'image',
+      url: '/../images/BasicsBg.png'
+    },{
+      id: 3,
       type: 'image',
       url: '/../images/componentBg.png'
     }],
+    navigationList: [{
+      id: 0,
+      type: 'image',
+      page: '/pages/home-music/home-music',
+      text: '音乐',
+      image: '/../images/logo.png'
+    },{
+      id: 1,
+      type: 'image',
+      page: '/pages/home-sport/home-sport',
+      text: '运动',
+      image: '/../images/logo.png'
+    },{
+      id: 2,
+      type: 'image',
+      page: '/pages/home-reading/home-reading',
+      text: '读物',
+      image: '/../images/logo.png'
+    },,{
+      id: 3,
+      type: 'image',
+      page: '/pages/index/index',
+      text: '更多',
+      image: '/../images/wave.gif'
+    }]
   },
   onLoad() {
     this.towerSwiper('swiperList');

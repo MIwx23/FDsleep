@@ -1,2 +1,37 @@
 <!--pages/commutiy/commutiy.wxml-->
-<text>pages/commutiy/commutiy.wxml</text>
+<scroll-view scroll-x class="bg-white nav">
+  <view class="flex text-center">
+    <view class="cu-item flex-sub {{index==TabCur?'text-orange cur':''}}" wx:for="{{commutiyNavigationList}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+      {{item.text}}
+    </view>
+  </view>
+</scroll-view>
+
+<view hidden="{{TabCur!==0}}">
+<commutiy_01></commutiy_01>
+
+</view>
+
+<view hidden="{{TabCur!==1}}"></view>
+
+<view hidden="{{TabCur!==2}}">
+  <view class="cu-card article" wx:for="{{4}}">
+  <view class="cu-item shadow">
+    <view class="title">
+      <view class="text-cut">关于中医让你睡的更好的9个小技巧和10种方法11天彻底改善睡眠</view>
+    </view>
+    <view class="content">
+      <image src="/../images/logo.png" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content"> 折磨生出苦难，苦难又会加剧折磨，凡间这无穷的循环，将有我来终结！真正的恩典因不完整而美丽，因情感而真诚，因脆弱而自由！</view>
+        <view>
+          <view class="cu-tag bg-red light sm round">中医</view>
+          <view class="cu-tag bg-green light sm round">睡眠</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+</view>
+
+<view hidden="{{TabCur!==3}}"></view>

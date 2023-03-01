@@ -1,7 +1,7 @@
+/* components/commutiy_plaza/commutiy_plaza.wxss */
 /* pages/commutiy/commutiy.wxss */
 .box {  
   margin: 20rpx 0; 
-  
 }
 
 .box view.cu-bar {

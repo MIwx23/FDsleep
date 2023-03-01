@@ -4,44 +4,46 @@
     "pages/mine/mine",
     "pages/commutiy/commutiy",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/home-music/home-music",
+    "pages/home-sport/home-sport",
+    "pages/home-reading/home-reading"
   ],
   "window": {
     "backgroundTextStyle": "light",
-
     "navigationBarTitleText": "Weixin",
     "navigationBarBackgroundColor": "#7acfa6",
     "navigationBarTextStyle": "white",
-    "backgroundColor": "#7acfa6", 
+    "backgroundColor": "#7acfa6",
     "enablePullDownRefresh": true
   },
-
   "tabBar": {
     "backgroundColor": "#ffffff",
     "color": "#979795",
     "selectedColor": "#fb977e",
-    "list": [{
+    "list": [
+      {
         "pagePath": "pages/home/home",
         "iconPath": "icon/首页1.png",
         "selectedIconPath": "icon/首页2.png",
         "text": "首页"
-      }, {
+      },
+      {
         "pagePath": "pages/commutiy/commutiy",
         "iconPath": "icon/社区1.png",
         "selectedIconPath": "icon/社区2.png",
         "text": "社区"
-      }, {
+      },
+      {
         "pagePath": "pages/mine/mine",
         "iconPath": "icon/我的1.png",
         "selectedIconPath": "icon/我的2.png",
         "text": "我的"
       }
-
     ]
   },
   "usingComponents": {
     "cu-custom": "/colorui/components/cu-custom"
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
